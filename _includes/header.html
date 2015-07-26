@@ -1,0 +1,41 @@
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sitenav-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a href="{{ site.url | prepend: site.baseurl }}" class="navbar-brand">{{ site.title }}</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="sitenav-navbar">
+      <ul class="navbar-nav nav">
+        {% for item in site.site_nav %}
+          <li class="{% if item.children %}dropdown{% endif %} {% if item.path and item.path == page.permalink %}active{% endif %}">
+            <a href="{% if item.path %}{{ item.path | prepend: site.baseurl }}{% else %}#{% endif %}"{% if item.children %} class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"{% endif %}>
+              {{ item.label }}
+
+              {% if item.children %}
+                <span class="caret"></span>
+              {% endif %}
+            </a>
+
+            {% if item.children %}
+              <ul class="dropdown-menu">
+                {% for child in item.children %}
+                  <li{% if child.path == page.permalink %} class="active"{% endif %}>
+                    <a href="{{ child.path | prepend: site.baseurl }}">{{ child.label }}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</nav>

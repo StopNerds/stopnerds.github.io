@@ -1,0 +1,49 @@
+# Site settings
+title: StopNerds.org
+email: help@stopnerds.org
+description: "Tirelessly fighting nerds since the 90s"
+baseurl: ""
+url: "http://localhost:4000"
+twitter_username: stopnerds_org
+github_username: frankusrs
+
+# menu
+site_nav:
+    -   label: Jimmy's story
+        path: /slideshow/
+
+    -   label: Take the Test
+        path: /nerd-test/
+
+    -   label: Get Help
+        children:
+            -   label: Symptoms & Diagnosis
+                path: /symptoms-and-diagnosis/
+
+            -   label: Recommended Software
+                path: /recommended-software/
+
+    -   label: The Facts
+        children:
+            -   label: GNU & Stalinism
+                path: /gnu-and-stalinism/
+
+            -   label: The Lies of PRISM Break
+                path: /the-lies-of-prism-break/
+
+            -   label: Autism
+                path: /autism/
+
+            -   label: Myths about Nerds
+                path: /myths-about-nerds/
+
+    -   label: SNPL
+        path: /license/
+
+    -   label: About Us
+        path: /about-us/
+
+
+# Build settings
+markdown: kramdown
+permalink: pretty
