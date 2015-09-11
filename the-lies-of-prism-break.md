@@ -1,0 +1,34 @@
+---
+# vim: set ft=markdown :
+layout: default
+title: The Lies of PRISM Break
+permalink: /the-lies-of-prism-break/
+---
+
+# The Lies of PRISM Break
+
+If you haven’t been sleeping under a rock lately, then you’ve surely heard of [PRISM](http://en.wikipedia.org/wiki/PRISM), the U.S. National Security Agency’s Orwell-esque internet surveillance program which was recently uncovered by whistleblower Edward Snowden. Needless to say, the leak has given the debate about surveillance a real kickstart and the opinions vary a lot. Sadly, as with every other catastrophe or scandal, there will always be shady gangs out there exploiting peoples’ emotions and using it towards their own benefit. For instance, during the 2004 tsunami in the Indian Ocean, crooks had set up fake fundraisers in order to steal money from well-meaning donators. While the money should have gone to the victims, the money went straight into some criminal’s pocket instead. This is comparable with the on-going case, in which a gang of Free Software zealots are **exploiting the fear of being monitored in order to promote their “free” software**. To be more precise, the Free Software zealots behind the website [PRISM Break](http://prism-break.org/) have been promoting a list of software which is supposedly capable of evading NSA’s surveillance.
+
+Why is this bad, you might ask? After all, they are giving you free and open source software without charge, right? And using this software will magically exempt you from NSA’s surveillance programme… right? Yeah, no. Not quite.
+
+## PRISM Break Confuses Two Separate Issues, Intentionally
+
+The supposed benefit to using free software is that the software’s source code is freely available and therefore gets subjected to heavy audit which prevents backdoors and other surveillance-enabling nastiness from entering the software. In theory, it sounds like a great idea; in practice, [it doesn’t work](http://arstechnica.com/business/2012/02/malicious-backdoor-in-open-source-messaging-apps-not-spotted-for-4-months/). But assuming it did, would using free software protect you from PRISM?
+
+Let’s take a look at the facts. According to the NSA’s [infamous leaked slide](http://en.wikipedia.org/wiki/File:PRISM_Collection_Details.jpg) Microsoft, Google, Yahoo!, Facebook, PalTalk, YouTube, Skype, AOL and Apple all provide data to the NSA. What data? According to the same slide, email, video/voice chats, videos, photos, stored data, VoIP, file transfers, video conferencing, login notifications and social networking details are the types of data provided. Can you see the pattern here? This is data which is transmitted over an internet connection—the moment the data leaves your computer, you are not in control of it. Using a free web browser will not automatically prevent your ISP or the NSA from seeing your data, and Tor will not prevent prying eyes from watching the video conference you’re having on Skype.
+
+Let’s say you’re talking to a person named Bob in a bidirectional video conference. Your camera and microphone pick up video and audio which gets transmitted to Bob, but through which route? It is extremely likely that you are talking with Bob through a third-party service such as Skype or Facebook. This means that your video and audio are first sent to the third-party’s servers, **which you cannot control**, before being sent to Bob. What makes PRISM’s surveillance possible is using **Software as a Service** (SaaS), _not_ running proprietary software on your own computer.
+
+The confusion over the two issues (SaaS and proprietary software) is intentional. In order to promote their products, the Free Software zealots like to use scaremongering as a promotion tactic, as well as [Westboro Baptist Church-like protesting](http://news.slashdot.org/story/12/12/21/2212202/gnu-hands-out-trisquel-at-a-microsoft-store) every time something new and “evil” is released. For the record, economic gain isn’t the Free Software zealots’ motivation either—rather, [they act like a hate group and have similar intentions](http://stopnerds.org/gnu-and-stalinism/).
+
+Reading PRISM Break’s site, it becomes quite clear that they intentionally confuse the “issue” of proprietary software with the issue of SaaS. Under the “media publishing” category they recommend the Wordpress software as an alternative to Tumblr, while pointing out that self-hosting is important to escape surveillance (i.e. one must run the software oneself, not use a third-party service such as Wordpress.com). This is correct. However, they promote DuckDuckGo, a search service, as an alternative to Google Search on the same page, arguing that DuckDuckGo is partly free software and therefore the better alternative. This contradicts their own implication, namely that self-hosting is essential to avoid surveillance.
+
+On an unrelated note: wouldn’t it be possible to communicate directly with Bob, without using a third-party service? Yes, it would. However, this would require at least one party to have the necessary network ports open in both the person’s software firewall and router in order to let the other party establish a connection. Opening ports is hard for most users and even impossible in some cases. Thus, most people are stuck using third-party services which are convenient but could be monitored.
+
+## Conclusion: A Fake Sense of Security
+
+To wrap things up, free software gives the user a fake sense of security. When run on a third-party server, it doesn’t matter if the software is free or not, because the user has no way of verifying what happens with the data either way. When used on a computer, it doesn’t protect one from being monitored through PRISM, neither does it guarantee that the software you are using isn’t malicious. In fact, by using low-profile free software, you are most likely at even greater risk—since the software has low popularity, security researches won’t bother looking for exploits in it, but script kiddies attempting to attack you can do so with ease. This isn’t the case when the source code is off limits.
+
+You also ought to ask yourself whether or not you’re up to the task of assessing a software’s code base—Free Software zealots like to point out that with free software you can verify that the code you’re running is safe, but this only applies if you can read the code. (If it is even feasilble to read it—projects like Firefox and the Linux kernel have _millions_ of lines of code, which theoretically also makes it easy for backdoors to slip through.) If you’re like us, you rely on a third-party to do that job. We prefer that third-party to be a software company whose employees make great products for a living rather than some basement-dwelling neckbeard who writes half-assed barely usable software [to settle a personal vendetta against Microsoft](http://www.gnu.org/philosophy/fs-motives.html).
+
+_Article Written by Travis "Negi Springfield" Westphal._
