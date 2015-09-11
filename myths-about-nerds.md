@@ -84,5 +84,3 @@ Over the years, nerds have made many sketchy statements which have typically bee
 #### 3.4) Myth: Nerds will become scientists or hold other high-level roles
 
 **Truth:** It is common for nerds to stand on the shoulders of giants and make outrageous claims like these. The so-called "nerds" who've helped moved science and technology forward for thousands of years have nothing in common with the nerds who promote Linux, Minecraft and Ron Paul. A prerequisite for innovation is that there are problems which need solving; nerds are not solving problems, but are instead reinventing the wheel because they are under the false belief that a solution provided by Microsoft or Apple is inherently evil.
-
-* * *
