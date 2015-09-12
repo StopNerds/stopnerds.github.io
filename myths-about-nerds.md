@@ -4,11 +4,11 @@ layout: default
 title: Myths About Nerds
 permalink: /myths-about-nerds/
 ---
-
-# Myths About Nerds
-
+  
+  
 Over the years, nerds have made many sketchy statements which have typically been repeated over and over, but are any of these assertions true? In this article, we'll address some of the most common myths, as well as the outright lies, which are often perpetuated by nerds.
-
+  
+  
 ## 1) Myths about anime and manga (collectively "anime")
 
 #### 1.1) Myth: Anime is produced for an adult audience
@@ -26,7 +26,8 @@ Over the years, nerds have made many sketchy statements which have typically bee
 #### 1.4) Myth: It's called "loli pornography" because viewers self-insert as the loli.
 
 **Truth:** Nerds will never admit to being paedophiles and will make ridiculous claims such as these in order to justify their sick perversities.
-
+  
+  
 ## 2) Myths about Open Source Software
 
 ![]({{site.baseurl}}/img/hans_reiser.jpg)
@@ -66,7 +67,8 @@ Over the years, nerds have made many sketchy statements which have typically bee
 #### 2.9) Myth: I installed Linux for my {brother/sister/cousin/friend/relative} and he/she thinks it's better than Windows.
 
 **Truth:** Let's not fool anyone here; most likely, your friend or relative came to you for help with their computer. Instead of fixing the issue, you pushed Linux on to them, claiming it's easier to use and more stable. A non-nerd would have fixed the issue _without_ installing Linux, or left it alone entirely.
-
+  
+  
 ## 3) Myths about nerds
 
 ### 3.1) Myth: Nerds are more capable of critical thinking than the average person.
