@@ -4,11 +4,11 @@ layout: default
 title: Autism
 permalink: /autism/
 ---
-
-# Autism
-
+  
+  
 Chances are you have probably heard of the neurological disorder known as "autism" by now. But do you really know all the facts?
-
+  
+  
 ## Autism is The Most Over Diagnosed Disease
 
 Mass misdiagnosis of autism has always been the subject of controversy and debate, but most experts agree that the rate of incorrect diagnosis of autism is significant. Typically, researchers' estimates on the misdiagnosis of autism range from 30% to as high as 50%, but it is possible that the real figure is even higher. While these numbers don't relate to Nerdistic Behaviour Disorder, it certainly goes to show that there exists a widespread misunderstanding of autism, and a dangerous exaggeration of its prevalence.
@@ -24,6 +24,7 @@ Clearly, there is a problem here. But where does it come from? Why do parents an
 *   **An excuse for bad parenting.** It is often easier to classify your embarrassing offspring as autistic than it is to admit that you are a failure as a parent.
 
 *   **Denial is often easier than the truth.** Just like how fat people insist that they are only "big boned", some people prefer to believe they have autism rather than actually addressing the problem.
+  
 
 ## Free Software Extremists Openly Exploit Autists
 
@@ -34,7 +35,8 @@ This is not a conpisracy theory. It is no secret that the communists behind the 
 > — [Auticon](http://www.ft.com/intl/cms/s/0/2511f43a-c22b-11e2-8992-00144feab7de.html), an autist-employing IT company in Germany.
 
 Of course, it is not only the Free Software zealots who are abusing and exploiting autists for their coding gifts. Copying freetard tactics, some for-profit software companies have also hired autists to work for them as programmers, as a cheaper alternative to hiring real people.
-
+  
+  
 ## Nerds are a Greater Problem Than Autists
 
 While there is extreme overdiagnosis of autism, there is mass underdiagnosis of Nerdistic Behaviour Disorder. Unlike autism, it is possible to eventually overcome Nerdistic Behaviour Disorder and become a functioning member of society.
