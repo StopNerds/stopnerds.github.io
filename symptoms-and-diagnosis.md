@@ -5,8 +5,7 @@ title: Symptoms & Diagnosis
 permalink: /symptoms-and-diagnosis/
 ---
 
-
-# Symptoms & Diagnosis
+  
 
 The symptoms lists below have been culled and summarized from current diagnostic criteria most commonly used in the United States by mental health professionals. Read through the list below to confirm your nerd status. You're most likely a nerd if you present at least four of the following behaviors:
 
