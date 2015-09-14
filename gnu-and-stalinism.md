@@ -37,7 +37,7 @@ if you do it for ideological reasons, you should seek a doctor immediately. With
 that having been said, this article will be focusing on the political/ethical
 aspects of the Free Software movement, which makes sense since you can't compare
 political movements with software projects.
-<br>
+
 ## Hiding the Truth
 
 Similar to how North Korea oppresses any criticism directed towards their
@@ -62,8 +62,6 @@ Thankfully, it has [failed](http://www.olpcnews.com/countries/peru/who_is_to_bla
 >
 >   — [Richard Stallman on Flash Player](http://marc.info/?l=openbsd-misc&amp;m=119762874930534&amp;w=2)
 
-
-<br>
 ## Why the Truth is Dangerous to Free Software
 
 In North Korea, the truth about the outside world must be either hidden or twisted
@@ -87,7 +85,7 @@ The only real-world issue with proprietary software is that it's better than fre
 software, and is therefore a distraction to the Free Software movement. Which
 brings me to my next point...
 
-<br>
+
 ## Free Software Only Benefits the Nerds
 
 The GNU project has four "essential freedoms" which must apply to a software package before it can be considered "free":
@@ -108,8 +106,7 @@ others, I'm sure that this applies to *every other student* in my school too.
 
 So if the nerds aren't even taking advantage of the supposed benefits with free
 software, just *what* is the point?
-<br>
-<br>
+
 ## Extremists in the Software World
 
 The answer to the question above [can be found](http://www.gnu.org/philosophy/fs-motives.html)
