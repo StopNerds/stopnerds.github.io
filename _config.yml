@@ -3,9 +3,7 @@ title: StopNerds.org
 email: help@stopnerds.org
 description: "Tirelessly fighting nerds since the 90s"
 baseurl: ""
-url: "http://localhost:4000"
-twitter_username: stopnerds_org
-github_username: frankusrs
+url: "http://stopnerds.org"
 
 # menu
 site_nav:

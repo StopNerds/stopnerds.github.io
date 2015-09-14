@@ -20,16 +20,46 @@ Being based on the MIT licence, the SNPL is very easy for programmers to read an
 
 As a result of banning incorporation into GPL projects, the AGPL and LGPL licences are also incompatible as they contain contradicting clauses that allow GPL-relicensing in certain cases.
 
-Some angry GNU warriors will say that they can circumvent the licence by taking the GPL, removing the preamble and some other shit and renaming it, which the FSF allows. While that is true, the GPL community will still not be able to benefit from your work, and it is highly unlikely that such a modified licence will gain widespread adoption.
+Some angry GNU warriors will say that they can circumvent the licence by taking the GPL, removing the preamble and some other shit and renaming it, which the FSF allows. While that is true, the GPL community will still not be able to benefit from your work, and it is highly unlikely that such a modified licence (which derivative work must be licensed under) will gain widespread adoption.
 
-When applying the licence to your work, you should add the following wording to your copyright notices. You may change it as you see fit.
+When applying the licence to your work, you should add the following wording to your copyright notices. You may change it as you see fit:
 
     This work is licensed under the terms of the StopNerds Public License
-    version 1.0, as published by the StopNerds Foundation.
+    version 1.1, as published by the StopNerds Foundation.
     See http://www.stopnerds.org/license/ for more information. 
 <br>
 <br>
 ## Licence texts
+<<<<<<< HEAD
+=======
+
+Version 1.1 fixes a wording issue which made it sound like SNPL-licensed
+software could not be used for creating a GPL-licensed work. Using this version
+is highly recommended.
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, and/or sell copies of the
+    Software, and to permit persons to whom the Software is furnished to do so,
+    subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in
+    all copies or substantial portions of the Software.
+
+    This software, in whole or in part, shall not be combined to form a work that
+    is covered under any version of the GNU General Public License, as published
+    by the Free Software Foundation, Inc.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+    THE SOFTWARE.
+
+>>>>>>> upstream/master
 ### StopNerds Public License (SNPL) version 1.0
 
     Permission is hereby granted, free of charge, to any person obtaining a copy
