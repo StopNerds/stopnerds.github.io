@@ -5,8 +5,6 @@ title: Autism
 permalink: /autism/
 ---
 
-# Autism
-
 Chances are you have probably heard of the neurological disorder known as "autism" by now. But do you really know all the facts?
 
 ## Autism is The Most Over Diagnosed Disease
@@ -25,6 +23,7 @@ Clearly, there is a problem here. But where does it come from? Why do parents an
 
 *   **Denial is often easier than the truth.** Just like how fat people insist that they are only "big boned", some people prefer to believe they have autism rather than actually addressing the problem.
 
+<br>
 ## Free Software Extremists Openly Exploit Autists
 
 This is not a conpisracy theory. It is no secret that the communists behind the Free Software movement [go to great lengths to force people to submit to their unforgiving creed](http://stopnerds.org/gnu-and-stalinism/). They achieve satisfaction by not only forcing people to use their crappy software, but by [forcing people to contribute code to it too](http://emergelinux.tumblr.com/post/23289553550/the-problem-with-the-gpl). In the same way that Minecraft targets the autistic market, [The Free Software zealots openly recruit “autists” to join their movement and write code for them](http://www.codinghorror.com/blog/2006/01/software-developers-and-aspergers-syndrome.html). As the symptoms of autism include having no social skills and an immense interest in building useless things to no end, the Free and open-source software movement and autism seem like the perfect match for each other. This allows freetards like Richard Stallman and Linus Torvalds to sit back, relax and continue making money while autistic children and teenagers write all their code for them.
@@ -35,6 +34,7 @@ This is not a conpisracy theory. It is no secret that the communists behind the 
 
 Of course, it is not only the Free Software zealots who are abusing and exploiting autists for their coding gifts. Copying freetard tactics, some for-profit software companies have also hired autists to work for them as programmers, as a cheaper alternative to hiring real people.
 
+<br>
 ## Nerds are a Greater Problem Than Autists
 
 While there is extreme overdiagnosis of autism, there is mass underdiagnosis of Nerdistic Behaviour Disorder. Unlike autism, it is possible to eventually overcome Nerdistic Behaviour Disorder and become a functioning member of society.

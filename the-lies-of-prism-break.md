@@ -5,12 +5,11 @@ title: The Lies of PRISM Break
 permalink: /the-lies-of-prism-break/
 ---
 
-# The Lies of PRISM Break
-
 If you haven’t been sleeping under a rock lately, then you’ve surely heard of [PRISM](http://en.wikipedia.org/wiki/PRISM), the U.S. National Security Agency’s Orwell-esque internet surveillance program which was recently uncovered by whistleblower Edward Snowden. Needless to say, the leak has given the debate about surveillance a real kickstart and the opinions vary a lot. Sadly, as with every other catastrophe or scandal, there will always be shady gangs out there exploiting peoples’ emotions and using it towards their own benefit. For instance, during the 2004 tsunami in the Indian Ocean, crooks had set up fake fundraisers in order to steal money from well-meaning donators. While the money should have gone to the victims, the money went straight into some criminal’s pocket instead. This is comparable with the on-going case, in which a gang of Free Software zealots are **exploiting the fear of being monitored in order to promote their “free” software**. To be more precise, the Free Software zealots behind the website [PRISM Break](http://prism-break.org/) have been promoting a list of software which is supposedly capable of evading NSA’s surveillance.
 
 Why is this bad, you might ask? After all, they are giving you free and open source software without charge, right? And using this software will magically exempt you from NSA’s surveillance programme… right? Yeah, no. Not quite.
-
+<br>
+<br>
 ## PRISM Break Confuses Two Separate Issues, Intentionally
 
 The supposed benefit to using free software is that the software’s source code is freely available and therefore gets subjected to heavy audit which prevents backdoors and other surveillance-enabling nastiness from entering the software. In theory, it sounds like a great idea; in practice, [it doesn’t work](http://arstechnica.com/business/2012/02/malicious-backdoor-in-open-source-messaging-apps-not-spotted-for-4-months/). But assuming it did, would using free software protect you from PRISM?
@@ -24,7 +23,8 @@ The confusion over the two issues (SaaS and proprietary software) is intentional
 Reading PRISM Break’s site, it becomes quite clear that they intentionally confuse the “issue” of proprietary software with the issue of SaaS. Under the “media publishing” category they recommend the Wordpress software as an alternative to Tumblr, while pointing out that self-hosting is important to escape surveillance (i.e. one must run the software oneself, not use a third-party service such as Wordpress.com). This is correct. However, they promote DuckDuckGo, a search service, as an alternative to Google Search on the same page, arguing that DuckDuckGo is partly free software and therefore the better alternative. This contradicts their own implication, namely that self-hosting is essential to avoid surveillance.
 
 On an unrelated note: wouldn’t it be possible to communicate directly with Bob, without using a third-party service? Yes, it would. However, this would require at least one party to have the necessary network ports open in both the person’s software firewall and router in order to let the other party establish a connection. Opening ports is hard for most users and even impossible in some cases. Thus, most people are stuck using third-party services which are convenient but could be monitored.
-
+<br>
+<br>
 ## Conclusion: A Fake Sense of Security
 
 To wrap things up, free software gives the user a fake sense of security. When run on a third-party server, it doesn’t matter if the software is free or not, because the user has no way of verifying what happens with the data either way. When used on a computer, it doesn’t protect one from being monitored through PRISM, neither does it guarantee that the software you are using isn’t malicious. In fact, by using low-profile free software, you are most likely at even greater risk—since the software has low popularity, security researches won’t bother looking for exploits in it, but script kiddies attempting to attack you can do so with ease. This isn’t the case when the source code is off limits.

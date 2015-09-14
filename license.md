@@ -5,8 +5,6 @@ title: SNPL
 permalink: /license/
 ---
 
-# StopNerds Public License
-
 The StopNerds Public License (SNPL) is an Open Source Software licence (incorrectly referred to as a "Free Software licence" by the Free Software Foundation) that is thought to be compatible with both the [Free Software Definition](https://www.gnu.org/philosophy/free-sw.html) and the [Open Source Definition](http://opensource.org/osd). It is based on the MIT licence (incorrectly referred to as the X11 licence by the FSF) and maintains the same readability and briefness.
 
 ## Purpose
