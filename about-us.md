@@ -6,6 +6,19 @@ permalink: /about-us/
 
 The StopNerds Foundation was founded in 2011 by two former victims of the nerd disease. Since its inception, the organization has grown to become the world's leading nerd science and advocacy group, dedicated to funding prevention and treatment research, while increasing awareness of the disease. We are proud of what we've been able to accomplish and look forward to continued successes in the years ahead.
 
+<style>
+    .stopnerds-members .row {
+        margin: 30px 0;
+    }
+    .stopnerds-members h3 {
+        margin-top: 0;
+    }
+    .col-sm-5 {
+        width: 100%;
+        max-width: 250px;
+    }
+</style>
+
 <div class="stopnerds-members">
     <div class="row">
         <div class="col-sm-5"><img src="{{ site.baseurl }}/img/michael.jpg" alt="Michael (co-founder)" width="200" height="150"></div>
