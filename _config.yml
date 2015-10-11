@@ -3,7 +3,7 @@ title: StopNerds.org
 email: help@stopnerds.org
 description: "Tirelessly fighting nerds since the 90s"
 baseurl: ""
-url: "http://stopnerds.org"
+url: "http://stopnerds.github.io"
 
 # menu
 site_nav:
