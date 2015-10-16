@@ -6,70 +6,73 @@ permalink: /nerd-test/
 ---
 <script type="text/javascript">
     function results(){
-    	var choices = $('input:radio:checked');
-    	var values = {
-    		 0: [0,0.5,1,1.5,2],
-    		 1: [0,0.5,1,1.5,2],
-    		 2: [0,0.5,1,1.5,2],
-    		 3: [2,1.5,1,0.5,0],
-    		 4: [2,1.5,1,0.5,0],
-    		 5: [0,0.5,1,1.5,2],
-    		 6: [0,0.5,1,1.5,2],
-    		 7: [2,1.5,1,0.5,0],
-    		 8: [0,0.5,1,1.5,2],
-    		 9: [0,0.5,1,1.5,2],
-    		10: [0,0.5,1,1.5,2],
-    		11: [0,0.5,1,1.5,2],
-    		12: [2,1.5,1,0.5,0],
-    		13: [0,0.5,1,1.5,2],
-    		14: [2,1.5,1,0.5,0],
-    		15: [0,0.5,1,1.5,2],
-    		16: [0,0.5,1,1.5,2],
-    		17: [0,0.5,1,1.5,2],
-    		18: [0,0.5,1,1.5,2],
-    		19: [0,0.5,1,1.5,2],
-    		20: [0,0.5,1,1.5,2]
-    	}
+        var choices = $('input:radio:checked'),
+            nerd = [0,0.25,0.50,0.75,1], notNerd = [1,0.75,0.5,0.25,0],
+            ossQuestions = ['8','11','12','13','17'],
+            values = {
+             0: nerd,
+             1: nerd,
+             2: nerd,
+             3: notNerd,
+             4: notNerd,
+             5: nerd,
+             6: nerd,
+             7: notNerd,
+             8: nerd,
+             9: nerd,
+            10: nerd,
+            11: nerd,
+            12: notNerd,
+            13: nerd,
+            14: notNerd,
+            15: nerd,
+            16: nerd,
+            17: nerd,
+            18: nerd,
+            19: nerd,
+            20: nerd
+        }
 
-    	var nLine = function(i){
-    		var lines = ["You have answered this test in such a way to suggest that you are not a nerd.", "You have answered this test in such a way to suggest that you are <i>possibly</i> a nerd, but it is not likely. While you displayed nerd traits, you appear to be almost normal.", "You have answered this test in such a way to suggest that you are <i>probably</i> a nerd. Please consult your doctor for more information.", "You have answered this test in such a way to suggest that you are <i>definitely</i> a nerd. <u>Seek help immediately.</u>"];
-    		if (i > 10) return lines[Math.round(i/10)-1];
-    		else return lines[Math.round(i/10)];
-    	}
+        var nLine = function(score){
+            var lines = ["not a nerd.", "<i>possibly</i> a nerd, but it is not likely. While you displayed nerd traits, you appear to be almost normal.", "<i>probably</i> a nerd. Please consult your doctor for more information.", "<i>definitely</i> a nerd. <u>Seek help immediately.</u>"];
 
-    	var ossLine = function(i){
-    		var lines = ["You do not appear to be infected by open source software.", "You appear to have some open source software tendencies.", "You appear to have some open source software tendencies." ,"You appear to have abnormal open source software tendencies.", "You appear to have extreme open source software tendencies. <u>Seek help immediately.</u>"];
+                r=.99*score/(Object.keys(values).length-1); 
+                return lines[Math.floor(r*lines.length)] || lines[lines.length-1]
+        }
 
-    		if (i > 2) return lines[Math.round(i/2)-1];
-    		else return lines[Math.round(i/2)];
-    	}
+        var ossLine = function(score){
+            var lines = ["You do not appear to be infected by open source software.", "You appear to have some open source software tendencies.", "You appear to have some open source software tendencies." ,"You appear to have abnormal open source software tendencies.", "You appear to have extreme open source software tendencies. <u>Seek help immediately.</u>"];
 
-    	var result = function(){
-    		var nerdTotal = ossTotal = Cur = 0;
-    		for (var i = 0; i < choices.length; i++) {
-    			var qNum = choices[i].name.slice(9);
-    			cur = values[qNum][choices[i].value];
-    			nerdTotal += cur;
-    			if (['8','11','12','13','17'].indexOf(qNum) > -1)
-    				ossTotal += cur;
-    		};
-    		return [nerdTotal, ossTotal]
-    	}();
+                r=.99*score/(5); 
+                return lines[Math.floor(r*lines.length)] || lines[lines.length-1]
+        }
 
-    	$('.table-responsive').slideUp(1200,'swing', function(){
-    		document.getElementById('result').innerHTML = "<p>You have scored <b>" + result[0] + "</b> on the Nerdistic Behaviour Disorder index.</p> <p>"
-    		document.getElementById('result').innerHTML += nLine(result[0]) + "</p> <p>";
-    		document.getElementById('result').innerHTML += "For the OSSA (Open Source Software Addiction) index, you scored <b>" + result[1] + "</b> " + ossLine(result[1]) + "</p>";
-    		document.getElementById('result').innerHTML += "<a href='#' onclick='reset()'>Take the test again?</a>"
-    		$('#result').show(1300, 'swing');
-    	});
+        var result = (function(){
+            var nerdTotal = ossTotal = Cur = 0;
+            for (var i = 0; i < choices.length; i++) {
+                var qNum = choices[i].name.slice(9);
+                cur = values[qNum][choices[i].value];
+                nerdTotal += cur;
+                if (ossQuestions.indexOf(qNum) > -1)
+                    ossTotal += cur;
+            };
+            return [nerdTotal, ossTotal]
+        })();
+
+        $('.table-responsive').slideUp(1200,'swing', function(){
+            document.getElementById('result').innerHTML = "<p>You have scored <b>" + result[0] + "</b> on the Nerdistic Behaviour Disorder index.</p> <p>"
+            document.getElementById('result').innerHTML += "You have answered this test in such a way to suggest that you are " + nLine(result[0]) + "</p> <p>";
+            document.getElementById('result').innerHTML += "For the OSSA (Open Source Software Addiction) index, you scored <b>" + result[1] + ".</b> " + ossLine(result[1]) + "</p>";
+            document.getElementById('result').innerHTML += "<a href='#' onclick='reset()'>Take the test again?</a>"
+            $('#result').show(1300, 'swing');
+        });
     }
     function reset(){
-    	$('#result').slideUp(1300, 'swing', function(){
-    		$('#result').html('');
-    		$('.table-responsive').slideDown(1300);
-    		$('.btn-primary').slideDown();
-    	})
+        $('#result').slideUp(1300, 'swing', function(){
+            $('#result').html('');
+            $('.table-responsive').slideDown(1300);
+            $('.btn-primary').slideDown();
+        })
     }
 </script>
 
