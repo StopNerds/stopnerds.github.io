@@ -5,32 +5,65 @@ title: Nerdistic Behaviour Disorder Test
 permalink: /nerd-test/
 ---
 <script type="text/javascript">
+    function plot(plotData){
+        var canvas = document.getElementById('canvas'), contex = canvas.getContext("2d"),
+            colours = ["#C02942","#D95B43","#542437"],
+            cX = canvas.width/2, cY = canvas.height/2, labels = ["Nerdistic behaviour", 'Political Affliations', 'OSS Addiction'],
+            start = 0,
+            total = Object.keys(plotData).reduce(function(sum, key){return sum + plotData[key]},0);
+            contex.clearRect(0, 0, canvas.width, canvas.height);
+
+            canvas.style.display = '';
+
+            for (var i = 1; i < 4; i++) {
+                var itemValue = plotData[i],
+                    sliceSize = (itemValue/total)*Math.PI*2,
+                    end = start + sliceSize,
+                    mid = start + sliceSize/2;
+
+                contex.save();
+                contex.fillStyle = colours[i-1];
+                contex.beginPath();
+                contex.moveTo(cX,cY);
+                contex.arc(cX,cY,canvas.height/3,start,end,false);
+                contex.closePath();
+                contex.fill();
+                contex.font = "9pt Helvetica Neue";
+              
+                if (itemValue)  contex.fillText(labels[i-1], cX+ Math.cos(mid) * cX*0.65-45, cY + Math.sin(mid) * cY *0.78+7);
+
+                start = end;
+            }
+    }
+
+
+
     function results(){
         var choices = $('input:radio:checked'),
             nerd = [0,0.25,0.50,0.75,1], notNerd = [1,0.75,0.5,0.25,0],
-            ossQuestions = ['8','11','12','13','17'],
+            ossQuestions = ['6','8','11','12','13','17'],
             values = {
-             0: nerd,
-             1: nerd,
-             2: nerd,
-             3: notNerd,
-             4: notNerd,
-             5: nerd,
-             6: nerd,
-             7: notNerd,
-             8: nerd,
-             9: nerd,
-            10: nerd,
-            11: nerd,
-            12: notNerd,
-            13: nerd,
-            14: notNerd,
-            15: nerd,
-            16: nerd,
-            17: nerd,
-            18: nerd,
-            19: nerd,
-            20: nerd
+             0: [nerd,1],
+             1: [nerd,1],
+             2: [nerd,1],
+             3: [notNerd,1],
+             4: [notNerd,1],
+             5: [nerd,1],
+             6: [nerd,3],
+             7: [notNerd,3],
+             8: [nerd,3],
+             9: [nerd,1],
+            10: [nerd,1],
+            11: [nerd,3],
+            12: [notNerd,3],
+            13: [nerd,3],
+            14: [notNerd,2],
+            15: [nerd,2],
+            16: [nerd,2],
+            17: [nerd,3],
+            18: [nerd,2],
+            19: [nerd,3],
+            20: [nerd,3]
         }
 
         var nLine = function(score){
@@ -43,33 +76,36 @@ permalink: /nerd-test/
         var ossLine = function(score){
             var lines = ["You do not appear to be infected by open source software.", "You appear to have some open source software tendencies.", "You appear to have some open source software tendencies." ,"You appear to have abnormal open source software tendencies.", "You appear to have extreme open source software tendencies. <u>Seek help immediately.</u>"];
 
-                r=.99*score/(5); 
+                r=.99*score/(ossQuestions.length-1); 
                 return lines[Math.floor(r*lines.length)] || lines[lines.length-1]
         }
 
         var result = (function(){
-            var nerdTotal = ossTotal = Cur = 0;
+            var nerdTotal = ossTotal = Cur = 0,
+                symTotal = {1: 0, 2:0, 3:0};
             for (var i = 0; i < choices.length; i++) {
                 var qNum = choices[i].name.slice(9);
-                cur = values[qNum][choices[i].value];
+                cur = values[qNum][0][choices[i].value];
+                symTotal[values[qNum][1]] += cur
                 nerdTotal += cur;
                 if (ossQuestions.indexOf(qNum) > -1)
                     ossTotal += cur;
             };
-            return [nerdTotal, ossTotal]
+            return [nerdTotal, ossTotal, symTotal]
         })();
 
         $('.table-responsive').slideUp(1200,'swing', function(){
-            document.getElementById('result').innerHTML = "<p>You have scored <b>" + result[0] + "</b> on the Nerdistic Behaviour Disorder index.</p> <p>"
+            document.getElementById('result').innerHTML += "<p>You have scored <b>" + result[0] + "</b> on the Nerdistic Behaviour Disorder index.</p> <p>"
             document.getElementById('result').innerHTML += "You have answered this test in such a way to suggest that you are " + nLine(result[0]) + "</p> <p>";
             document.getElementById('result').innerHTML += "For the OSSA (Open Source Software Addiction) index, you scored <b>" + result[1] + ".</b> " + ossLine(result[1]) + "</p>";
             document.getElementById('result').innerHTML += "<a href='#' onclick='reset()'>Take the test again?</a>"
+            if (result[0]) plot(result[2]);
             $('#result').show(1300, 'swing');
         });
     }
     function reset(){
         $('#result').slideUp(1300, 'swing', function(){
-            $('#result').html('');
+            $('#result').html('<center><canvas id="canvas" width="600" height="400" style="display: none;"></center>');
             $('.table-responsive').slideDown(1300);
             $('.btn-primary').slideDown();
         })
@@ -615,6 +651,8 @@ permalink: /nerd-test/
         </table>
     </div>
     <div class="results" id="result" style="display: none;">
+        <center><canvas id="canvas" width="600" height="400" style="display: none;">
+        </canvas></center>
     </div>
     <input class="btn btn-primary btn-lg" name="submit" type="submit" onclick="results(); $(this).slideUp();" value="Get Results">
 </div>
