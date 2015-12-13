@@ -2,6 +2,7 @@
 # vim: set ft=markdown :
 layout: default
 title: Myths About Nerds
+comments: true
 permalink: /myths-about-nerds/
 ---
 

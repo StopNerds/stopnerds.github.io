@@ -2,6 +2,7 @@
 # vim: set ft=markdown :
 layout: default
 title: Nerdistic Behaviour Disorder Test
+comments: true
 permalink: /nerd-test/
 ---
 <script type="text/javascript">

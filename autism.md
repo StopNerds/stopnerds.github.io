@@ -2,6 +2,7 @@
 # vim: set ft=markdown :
 layout: default
 title: Autism
+comments: true
 permalink: /autism/
 ---
 

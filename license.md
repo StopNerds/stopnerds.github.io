@@ -2,6 +2,7 @@
 # vim: set ft=markdown :
 layout: default
 title: SNPL
+comments: true
 permalink: /license/
 ---
 

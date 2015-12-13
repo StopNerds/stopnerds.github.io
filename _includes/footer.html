@@ -1,4 +1,17 @@
 <footer class="site-footer">
+  {% if page.comments %}
+	<div id="disqus_thread"></div>
+	<script id="dsq-count-scr" src="//stopnerds.disqus.com/count.js" async></script>
+	<script>
+		(function() {  
+			var d = document, s = d.createElement('script');
+			s.src = '//stopnerds.disqus.com/embed.js'; 
+			s.setAttribute('data-timestamp', +new Date());
+			(d.head || d.body).appendChild(s);
+		})();
+	</script>
+  {% endif %}
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
   <div class="container">
     <p>&copy; 2012–<script>document.write(new Date().getFullYear());</script>
       Eccentric New Media, Pty Ltd. All Rights Reserved.

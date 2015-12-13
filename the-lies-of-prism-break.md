@@ -2,6 +2,7 @@
 # vim: set ft=markdown :
 layout: default
 title: The Lies of PRISM Break
+comments: true
 permalink: /the-lies-of-prism-break/
 ---
 

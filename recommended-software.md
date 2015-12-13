@@ -2,6 +2,7 @@
 # vim: set ft=markdown :
 layout: default
 title: Recommended Software
+comments: true
 permalink: /recommended-software/
 ---
   

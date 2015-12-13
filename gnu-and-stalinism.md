@@ -2,6 +2,7 @@
 # vim: set ft=markdown :
 layout: default
 title: GNU & Stalinism
+comments: true
 permalink: /gnu-and-stalinism/
 ---
 

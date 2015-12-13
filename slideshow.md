@@ -2,6 +2,7 @@
 # vim: set ft=markdown :
 layout: default
 title: Jimmy's Story
+comments: true
 permalink: /slideshow/
 ---
 <script type="text/javascript">
@@ -78,5 +79,3 @@ permalink: /slideshow/
         <li><a class="slide-link-4" onclick="slide(4);" href="#slide4">4</a></li>
     </ul>
 </div>
-* * *
-<footer><small>Copyright © The StopNerds Foundation, LP.</small></footer>
