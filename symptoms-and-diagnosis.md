@@ -15,7 +15,7 @@ The symptoms lists below have been culled and summarized from current diagnostic
     *   Listening to indie music and/or listen to any music older than forty years
     *   Having an unusually high interest in STEM subjects
 *   **Holding insensible political opinions.** Symptoms may include:
-    *   Supporting Ron Paul for president of the United States
+    *   Supporting Libertarian candidates for president of the United States
     *   Identifying with an abnormal political philosophy such as libertarianism or anarchism
     *   Having the view that the NSA is watching everything you do online
 *   **OSSA (Open Source Software Addiction).** Symptoms may include:
